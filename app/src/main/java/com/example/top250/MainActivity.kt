@@ -70,6 +70,8 @@ class MainActivity : AppCompatActivity() {
         val json1 = readJSONFromAsset1()
         if (json1 != null)
         {
+
+
             val dadata: ResponseList = Gson().fromJson(json1, ResponseList::class.java)
             Log.i("test2", "${dadata.size}")
             dadata.forEachIndexed { index, item ->
