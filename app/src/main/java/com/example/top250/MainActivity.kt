@@ -75,7 +75,7 @@ class MainActivity : AppCompatActivity() {
             val dadata: ResponseList = Gson().fromJson(json1, ResponseList::class.java)
             Log.i("test2", "${dadata.size}")
             dadata.forEachIndexed { index, item ->
-                Log.i("test2", "${item.data.name}")
+                Log.i("test2", "${item.data.name} ${item.data.gender}")
             }
 //            Log.w("test2", dadata.item.size.toString())
         }
